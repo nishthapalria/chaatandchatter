@@ -236,6 +236,22 @@ img { max-width: 100%; display: block; }
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .engagement #like-btn:hover { transform: translate(-2px,-2px); box-shadow: 5px 5px 0 var(--pink); }
+
+.share-row {
+  display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+  margin-top: 12px;
+}
+.share-btn {
+  font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 0.78rem;
+  background: var(--bg-card); border: 2px solid var(--blue); color: var(--text);
+  padding: 8px 14px; border-radius: 999px; cursor: pointer;
+  box-shadow: 3px 3px 0 var(--blue);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.share-btn:hover { transform: translate(-2px,-2px); box-shadow: 5px 5px 0 var(--blue); }
+.share-btn.share-wa { border-color: #25D366; box-shadow: 3px 3px 0 #25D366; }
+.share-btn.share-wa:hover { box-shadow: 5px 5px 0 #25D366; }
 #disqus_thread { margin-top: 20px; }
 .ep-info #disqus_thread { color-scheme: dark; }
 
